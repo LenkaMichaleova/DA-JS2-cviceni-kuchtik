@@ -14,7 +14,7 @@ const recepty = json.data
 // ------ VYPSÁNÍ STRÁNKY -------- //
 document.querySelector('#root').innerHTML = render(
   <>
-    <h1 className='title'>Kuchtík</h1>
+    <h1 className='title'>U Knedlenky</h1>
     <div className="recipes-container">
       {recepty.map((item) => <RecipeCard key={item.id} props={item} />)}
     </div>
