@@ -43,7 +43,7 @@
 .btn-home {
   display: block;
   margin: 0 auto 3rem;
-  background-color: #3498db;
+  background-color: #ff7f50;
   color: white;
   font-size: 1rem;
   padding: 0.8rem 1.5rem;
@@ -61,11 +61,11 @@
 }
 
 .btn-home:hover {
-  background-color: #2980b9;
+  background-color: #ff5f30;
   transform: scale(1.05);
 }
 
 .btn-home:active {
-  background-color: #2471a3;
+  background-color: #ff5f30;
   transform: scale(0.97);
 }
