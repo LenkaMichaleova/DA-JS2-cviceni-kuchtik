@@ -1,0 +1,71 @@
+.recipe__image {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe__title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 1rem 0 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.recipe__ingredients {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  list-style-type: disc;
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.recipe__instruction {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #2d3436;
+  background-color: #f9f9f9;
+  border-left: 4px solid #27ae60;
+  padding-left: 1rem;
+  border-radius: 6px;
+}
+
+/* ===== Tlačítko zpět ===== */
+
+.btn-home {
+  display: block;
+  margin: 0 auto 3rem;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-home:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn-home:active {
+  background-color: #2471a3;
+  transform: scale(0.97);
+}

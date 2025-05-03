@@ -1,0 +1,144 @@
+/* Jedna RecipeCard */
+.recipe {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    padding-bottom: 1rem;
+  }
+  
+  .recipe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Obrázek receptu */
+  .recipe__image {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    filter: brightness(90%);
+  }
+  
+  .recipe__image:hover {
+    filter: brightness(100%);
+  }
+  
+  /* Titulek receptu */
+  .recipe__title {
+    font-size: 1.6rem;
+    margin: 1rem 1rem 0.5rem;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .recipe__title:hover {
+    color: #ff7f50;
+  }
+  
+  /* Popis receptu */
+  .recipe__description {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+    min-height: 3rem;
+  }
+  
+  /* Všechny tlačítka společné */
+  .recipe__detail {
+    margin: 0.5rem 0.3rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Tlačítko: Zobrazit recept */
+  .recipe__detail {
+    background-color: #ff7f50;
+    color: #fff;
+  }
+  
+  .recipe__detail:hover {
+    background-color: #ff5f30;
+  }
+  
+  .recipe__detail a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+.recipe__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* EDIT BUTTON – decentní, světlý */
+.recipe__edit {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.recipe__edit:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* DELETE BUTTON – červený, výrazný */
+.recipe__delete {
+  background: none;
+  color: #e74c3c;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.recipe__delete:hover {
+  background-color: #e74c3c;
+  color: white;
+  transform: scale(1.05);
+}
+
+  /* TABLET: 2 recepty vedle sebe */
+  @media (min-width: 600px) {
+    .recipe {
+      flex: 1 1 calc(50% - 2rem);
+      max-width: calc(50% - 2rem);
+    }
+  }
+  
+  /* DESKTOP: 3 recepty vedle sebe */
+  @media (min-width: 1024px) {
+    .recipe {
+      flex: 1 1 calc(33.333% - 2rem);
+      max-width: calc(33.333% - 2rem);
+    }
+  }
